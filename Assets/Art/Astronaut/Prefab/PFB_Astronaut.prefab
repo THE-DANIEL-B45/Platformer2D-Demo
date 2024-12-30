@@ -903,6 +903,7 @@ GameObject:
   - component: {fileID: 8007466312498025151}
   - component: {fileID: 6413013834153556191}
   - component: {fileID: 6314722146324297408}
+  - component: {fileID: 6732885455777327883}
   m_Layer: 0
   m_Name: PFB_Astronaut
   m_TagString: Untagged
@@ -981,6 +982,19 @@ MonoBehaviour:
   - {fileID: 1918426282720007879}
   - {fileID: 7274142433465299202}
   - {fileID: 4989476794605110809}
+--- !u!114 &6732885455777327883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8835229685202505509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 027b29a4cddf62942ac312f8bed962bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
 --- !u!1001 &2987335437580250577
 PrefabInstance:
   m_ObjectHideFlags: 0
