@@ -18,12 +18,17 @@ public class ItemManager : Singleton<ItemManager>
     private void Reset()
     {
         coins = 0;
-        coinsText.text = "x0";
+        UpdateUI();
     }
 
     public void AddCoins(int amount = 1)
     {
         coins += amount;
+        UpdateUI();
+    }
+
+    private void UpdateUI()
+    {
         coinsText.text = "x" + coins.ToString();
     }
 }
