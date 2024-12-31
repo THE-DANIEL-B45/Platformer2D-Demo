@@ -4682,7 +4682,7 @@ MonoBehaviour:
   startLife: 3
   destroyOnKill: 0
   delayToKill: 0
-  _flashColor: {fileID: 1363977278}
+  _flashColor: {fileID: 0}
 --- !u!4 &1378215524 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1985688959863477567, guid: 628db8f09e53d274ea48bb08a309dc4f, type: 3}
