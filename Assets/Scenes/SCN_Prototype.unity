@@ -4938,8 +4938,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73fe369d09f4902428fe66eaae003208, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coins: {fileID: 11400000, guid: fb72aef19048d274ebc2c26d719b00cb, type: 2}
   coinsText: {fileID: 296243267}
-  coins: 0
 --- !u!4 &1423317272
 Transform:
   m_ObjectHideFlags: 0

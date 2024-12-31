@@ -6,9 +6,9 @@ using UnityEngine;
 
 public class ItemManager : Singleton<ItemManager>
 {
+    public SOInt coins;
     public TextMeshProUGUI coinsText;
 
-    public int coins;
 
     private void Start()
     {
@@ -17,18 +17,18 @@ public class ItemManager : Singleton<ItemManager>
 
     private void Reset()
     {
-        coins = 0;
-        UpdateUI();
+        coins.value = 0;
+        //UpdateUI();
     }
 
     public void AddCoins(int amount = 1)
     {
-        coins += amount;
-        UpdateUI();
+        coins.value += amount;
+        //UpdateUI();
     }
 
     private void UpdateUI()
     {
-        coinsText.text = "x" + coins.ToString();
+        coinsText.text = "x" + coins.value.ToString();
     }
 }
