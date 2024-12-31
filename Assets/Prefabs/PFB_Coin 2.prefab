@@ -74,7 +74,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 14
   m_Sprite: {fileID: 21300000, guid: de085835d504f71449418b1ac8036134, type: 3}
-  m_Color: {r: 1, g: 0.959195, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.29131487, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -96,7 +96,7 @@ GameObject:
   - component: {fileID: -3636342469129727442}
   - component: {fileID: 5791296998556915231}
   m_Layer: 0
-  m_Name: PFB_Coin
+  m_Name: PFB_Coin 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -131,7 +131,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   compareTag: Player
-  amount: 1
+  amount: 5
 --- !u!58 &5791296998556915231
 CircleCollider2D:
   m_ObjectHideFlags: 0
