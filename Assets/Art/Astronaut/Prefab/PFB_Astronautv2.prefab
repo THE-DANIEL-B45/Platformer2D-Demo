@@ -1070,7 +1070,7 @@ GameObject:
   - component: {fileID: 6314722146324297408}
   - component: {fileID: 6732885455777327883}
   m_Layer: 0
-  m_Name: PFB_Astronaut
+  m_Name: PFB_Astronautv2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1239,6 +1239,18 @@ PrefabInstance:
     - target: {fileID: -7773466665484215046, guid: 8f0a112dd4756bf4fb5e36b6a29ebf4d, type: 3}
       propertyPath: m_Bounds.m_Extent.y
       value: 0.7423649
+      objectReference: {fileID: 0}
+    - target: {fileID: -7375750056327094095, guid: 8f0a112dd4756bf4fb5e36b6a29ebf4d, type: 3}
+      propertyPath: m_Color.b
+      value: 0.71882933
+      objectReference: {fileID: 0}
+    - target: {fileID: -7375750056327094095, guid: 8f0a112dd4756bf4fb5e36b6a29ebf4d, type: 3}
+      propertyPath: m_Color.g
+      value: 0.8867924
+      objectReference: {fileID: 0}
+    - target: {fileID: -7375750056327094095, guid: 8f0a112dd4756bf4fb5e36b6a29ebf4d, type: 3}
+      propertyPath: m_Color.r
+      value: 0.06274474
       objectReference: {fileID: 0}
     - target: {fileID: -5028242805796048023, guid: 8f0a112dd4756bf4fb5e36b6a29ebf4d, type: 3}
       propertyPath: m_Bounds.m_Center.x
