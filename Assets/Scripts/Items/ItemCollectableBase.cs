@@ -8,6 +8,7 @@ public class ItemCollectableBase : MonoBehaviour
     public ParticleSystem myParticleSystem;
     public float timeToHide = 3f;
     public GameObject graphicItem;
+    bool once;
 
     private void Awake()
     {
@@ -16,8 +17,9 @@ public class ItemCollectableBase : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.transform.CompareTag(compareTag))
+        if (collision.transform.CompareTag(compareTag) && !once)
         {
+            once = true;
             Collect();
         }
     }
