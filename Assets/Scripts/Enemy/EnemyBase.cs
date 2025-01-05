@@ -5,6 +5,7 @@ using UnityEngine;
 public class EnemyBase : MonoBehaviour
 {
     public int damage = 10;
+    public bool isDead;
 
     public Animator animator;
     public string triggerAttack = "Attack";
@@ -13,6 +14,8 @@ public class EnemyBase : MonoBehaviour
     public HealthBase healthBase;
 
     public float timeToDestroy = 1f;
+
+    public AudioSource audioSource;
 
     private void Awake()
     {
@@ -26,7 +29,9 @@ public class EnemyBase : MonoBehaviour
     {
         healthBase.OnKill -= OnEnemyKill;
         PlayDeathAnimation();
+        if(audioSource != null)audioSource.Play();
         Destroy(gameObject, timeToDestroy);
+        isDead = true;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -34,7 +39,7 @@ public class EnemyBase : MonoBehaviour
         Debug.Log(collision.transform.name);
         var health = collision.gameObject.GetComponent<HealthBase>();
 
-        if(health != null )
+        if(health != null && !isDead)
         {
             health.Damage(damage);
             PlayAttackAnimation();

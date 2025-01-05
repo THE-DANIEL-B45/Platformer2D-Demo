@@ -10,6 +10,9 @@ public class ItemCollectableBase : MonoBehaviour
     public GameObject graphicItem;
     bool once;
 
+    [Header("Sounds")]
+    public AudioSource audioSource;
+
     private void Awake()
     {
         //if (myParticleSystem != null) myParticleSystem.transform.SetParent(null);
@@ -41,6 +44,10 @@ public class ItemCollectableBase : MonoBehaviour
         if(myParticleSystem != null)
         {
             myParticleSystem.Play();
+        }
+        if(audioSource != null)
+        {
+            audioSource.Play();
         }
     }
 }

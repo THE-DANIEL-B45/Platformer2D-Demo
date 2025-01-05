@@ -13,6 +13,8 @@ public class GunBase : MonoBehaviour
 
     public Transform playerSideReference;
 
+    public AudioRandomShot randomShot;
+
     private void Awake()
     {
         playerSideReference = GetComponentInParent<Player>().gameObject.transform;
@@ -47,5 +49,6 @@ public class GunBase : MonoBehaviour
         var projectile = Instantiate(prefabProjectile);
         projectile.transform.position = positionToShoot.position;
         projectile.side = playerSideReference.transform.localScale.x;
+        if(randomShot != null)randomShot.PlayRandom();
     }
 }

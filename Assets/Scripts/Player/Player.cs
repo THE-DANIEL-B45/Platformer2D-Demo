@@ -9,6 +9,7 @@ public class Player : MonoBehaviour
 
     public Rigidbody2D myRigidBody;
     public HealthBase healthBase;
+    public AudioRandomJump audioRandomJump;
     //public Animator animator;
 
     private float _currentSpeed;
@@ -115,6 +116,7 @@ public class Player : MonoBehaviour
 
             HandleScaleJump();
             PlayJumpVFX();
+            audioRandomJump.PlayRandom();
         }
     }
 

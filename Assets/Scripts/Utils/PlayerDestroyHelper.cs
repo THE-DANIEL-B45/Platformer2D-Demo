@@ -14,5 +14,7 @@ public class PlayerDestroyHelper : MonoBehaviour
     public void KillPlayer()
     {
         player.DestroyMe();
+        GameObject.FindObjectOfType<EndGame>().CallEndGame();
+        GameObject.FindObjectOfType<PauseManager>().Pause();
     }
 }
